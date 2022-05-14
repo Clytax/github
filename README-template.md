@@ -76,6 +76,8 @@ the state has not changed. No idea why.
 
 ## Author
 
+Author: Marco Spano
+
 - Frontend Mentor - [@Clytax](https://www.frontendmentor.io/profile/Clytax)
 - Twitter - [@EinfachCoden](https://twitter.com/EinfachCoden)
 
