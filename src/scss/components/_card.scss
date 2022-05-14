@@ -108,5 +108,11 @@
 
 a{
   text-decoration: none;
-  color: inherit;
+  color: inherit; 
+
+  &:hover{
+    filter: brightness(.6);
+  }
 }
+
+.link{}
