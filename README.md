@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Repo URL: [Add solution URL here](https://github.com/Clytax/github)
+- Repo URL: [Github Repo](https://github.com/Clytax/github)
 - Live Site URL: [Live URL](https://github-eta-ten.vercel.app/)
 
 ## My process
@@ -48,6 +48,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - SCSS
+  - Mixins, Variables, Functions, Loops
 - BEM Naming
 - Flexbox
 - CSS Grid
