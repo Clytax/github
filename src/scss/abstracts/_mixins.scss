@@ -4,11 +4,9 @@
 @use '../base/typography' as *;
 @use 'media-query' as *;
 
-:root {
-  @each $color, $shades in $colors{
-    @each $shade, $value in $shades{
-      --clr-#{$color}-#{$shade}: #{$value};
-    }
+:root{
+  @each $name, $hex in $colors{
+    --clr-#{$name}: #{$hex};
   }
 
   @each $screen-size, $font-size in $type-scale{
@@ -29,17 +27,18 @@
   }
 }
 
-@each $color, $shades in $colors{
-  @each $shade, $value in $shades {
-    .text-#{$color}-#{$shade} {
-      color: $value;
-    }
-    .bg-#{$color}-#{$shade} {
-      background-color: $value;
-    }
+
+
+
+ 
+@each $name, $hex in $colors{
+  .text-#{$name} {
+    color: var(--clr-#{$name});
+  }
+  .bg-#{$name} {
+    background-color: var(--clr-#{$name});
   }
 }
-
 
 $spaceAmounts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, auto);
 
@@ -139,6 +138,14 @@ $spaceAmounts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, auto);
     .pt-#{$space} {
       padding-top: #{$space}rem;
     }
+  }
+}
+
+$directions: ("row", "column", "row-reverse", "column-reverse");
+
+@each $dir in $directions {
+  .#{$dir}{
+    flex-direction: #{$dir};
   }
 }
 

@@ -1,0 +1,24 @@
+$breakpoints: (
+  small: 40em,
+  medium: 65em
+);
+
+@mixin mq($key){
+  $size: map-get($breakpoints, $key);
+
+  @media only screen and (min-width: $size){
+    @content;
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}@mixin tablet-up {
+  @media (min-width: 56.25rem) { @content; }
+}@mixin desktop-up {
+  @media (min-width: 75rem) { @content; }
+}@mixin big-tv-up {
+  @media (min-width: 112.5rem) { @content; }
+}

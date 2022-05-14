@@ -1,0 +1,14 @@
+.app{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+.container{
+  width: clamp(30vw, 730px, 90%);
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+}

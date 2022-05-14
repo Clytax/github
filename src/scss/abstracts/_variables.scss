@@ -1,7 +1,19 @@
 // SCSS Variables
 
-
-:root {
-
+:root{
+  --clr-blue: #0079FF;
+  --clr-offwhite: #F6F8FF;
+  --clr-white: #FEFEFE;
+  --clr-grey: #697c9a;
+  --clr-dblue: #4b6A9b;
+  --clr-black: #2B3442;
 }
 
+$colors: (
+  blue: #0079FF,
+  offwhite: #F6F8FF,
+  white: #FEFEFE,
+  grey: #697c9a,
+  dblue: #4b6A9b,
+  black: #141D2F
+)

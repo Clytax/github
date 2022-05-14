@@ -1,0 +1,85 @@
+
+@import "../abstracts/functions";
+
+*{
+  font-family: 'Space Mono', monospace;
+
+}
+.searchbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  
+  padding: .5rem 1rem;
+  border-radius: 15px;
+
+  &__left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+
+      width: 20px;
+
+       @media (min-width: 50rem){
+        width: 24px;
+       }
+    }
+  }
+
+  &__mid{
+    flex-grow: 1;
+    input{
+      width: 100%;
+      border: none;
+      line-height: 25px;
+      font-size: rem(13);
+      background: none;
+
+      @media (min-width: 50rem){
+      font-size: rem(18);
+
+      }
+
+
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+
+  &__right{
+    button{
+      border-radius: 10px;
+      border: none;
+      padding: 1.1rem 2rem;
+      font-size: rem(14);
+
+      &:hover{
+        cursor: pointer;
+        filter: brightness(1.2);
+      }
+      @media (min-width: 50rem){
+        font-size: rem(16);
+  
+      }
+    }
+
+  }
+}
+
+.searchbar-error{
+  position: relative;
+
+  &:after{
+    content: "No results";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: #F74646;
+    font-size: 15px;
+    font-weight: bold;
+  
+  }
+}
